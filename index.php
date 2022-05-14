@@ -21,6 +21,7 @@
             background-image: url(./img/img.jpeg);
             background-size: cover;
             background-attachment: fixed;
+            background-position: center;
         }
 
         /*登入區整體效果*/
@@ -57,7 +58,7 @@
         #acc,
         #pw {
             width: 100%;
-            font-size: 20px;
+            font-size: 25px;
             padding: 0 2%;
         }
 
