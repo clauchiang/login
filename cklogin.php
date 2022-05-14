@@ -10,9 +10,7 @@
 $default_user='php';
 $default_pw='123';
 
-// $default_user='Ben';
-// $default_user='Marry';
-// $default_pw='123';
+
 
 
 $acc=$_POST['acc'];

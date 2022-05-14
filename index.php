@@ -58,6 +58,7 @@
         #pw {
             width: 100%;
             font-size: 20px;
+            padding: 0 2%;
         }
 
         /*文字標籤區*/

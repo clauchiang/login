@@ -69,8 +69,11 @@
 
     <h1>會員中心</h1>
 
-
-    <header>歡迎<?= $_GET['user']; ?> ~~~<i class="fa-solid fa-music"></i></i></header>
+    <header>
+        <marquee behavior="" direction="">
+            歡迎 <?= $_GET['user']; ?> ~~~<i class="fa-solid fa-music"></i></i>
+        </marquee>
+    </header>
 
     <div>
         <a href="./index.php"><input type="button" value="回到登入頁面"></a>
