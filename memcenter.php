@@ -48,9 +48,13 @@
             margin-top: 20vh;
         }
 
+        a{
+            padding: 0 10px;
+        }
+
         input {
-            width: max-content;
-            padding: 20%;
+            width: 15vh;
+            height: 5vh;
             border: none;
             background-color: whitesmoke;
             color: gray;
@@ -71,14 +75,14 @@
 
     <header>
         <marquee behavior="" direction="">
-            歡迎 <?= $_GET['user']; ?> ~~~<i class="fa-solid fa-music"></i></i>
+            歡迎 <?= $_COOKIE['login']; ?> ~~~<i class="fa-solid fa-music"></i></i>
         </marquee>
     </header>
 
     <div>
-        <a href="./index.php"><input type="button" value="回到登入頁面"></a>
+        <a href="./index.php"><input type="button" value="回首頁"></a>
+        <a href="./logout.php"><input type="button" value="登出"></a>   
     </div>
-
 
 </body>
 
