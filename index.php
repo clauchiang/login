@@ -35,7 +35,8 @@
             <a href="#">商品目錄</a>
         </div>
         <?php
-        if (empty($_COOKIE['login'])) {
+        session_start();
+        if (empty($_SESSION['login'])) {
         ?>
             <div>
                 <a href="./login.php">登入</a>
@@ -46,6 +47,7 @@
             }
             <div>
                 <a href="./memcenter.php">會員中心</a>
+                <a href="./logout.php">登出</a>
             </div>
         <?php
         }

@@ -1,10 +1,5 @@
 <?php
-
-if(isset($_COOKIE)){
-    setcookie('login','',time()-1);
+    session_start();
+    unset($_SESSION['login']);
     header("location:index.php");
-}else{
-    header("location:index.php");
-}
-
 ?>

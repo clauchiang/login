@@ -48,7 +48,7 @@
             margin-top: 20vh;
         }
 
-        a{
+        a {
             padding: 0 10px;
         }
 
@@ -73,15 +73,17 @@
 
     <h1>會員中心</h1>
 
+    <?= session_start(); ?>
+
     <header>
-        <marquee behavior="" direction="">
-            歡迎 <?= $_COOKIE['login']; ?> ~~~<i class="fa-solid fa-music"></i></i>
+        <marquee>
+            歡迎 <?= $_SESSION['login']; ?> ~~~<i class="fa-solid fa-music"></i></i>
         </marquee>
     </header>
 
     <div>
         <a href="./index.php"><input type="button" value="回首頁"></a>
-        <a href="./logout.php"><input type="button" value="登出"></a>   
+        <a href="./logout.php"><input type="button" value="登出"></a>
     </div>
 
 </body>

@@ -18,7 +18,8 @@ if($acc!=$default_user || $pw!=$default_pw){
 
 }
 else{
-    setcookie('login',$acc,time()+300);
+    session_start();
+    $_SESSION['login']=$acc;
     header("location:memcenter.php");
 }
 
